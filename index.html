@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>TO DO App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <table>
+        <div class="head">
+            <h2>To Do Web App</h2>
+        </div>
+        <tr>
+            <td>
+                <form  autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="title">Title</label><br>
+                        <input type="text" name="title" id="title"/>
+                    </div>
+                    <div>
+                        <label for="description">Description</label><br>
+                        <textarea name="description" id="description" cols="30" rows="20" "></textarea>
+                    </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                </form>
+            </td>
+                <td  class="tableRow">
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr class = "row">
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="recive">
+                        </tbody>
+                    </table>
+                </td>
+        </tr>
+    </table>
+</body>
